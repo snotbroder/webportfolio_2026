@@ -40,10 +40,10 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  /* :root {
     --backdrop: #ededed;
     --foreground: #0a0a0a;
-  }
+  } */
 }
 
 body {
