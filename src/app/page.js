@@ -1,4 +1,5 @@
 import Image from "next/image";
+import About from "./sections/About.jsx";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <p>Building Web Solutions</p>
       <p>Building Web Solutions</p>
       <p>Building Web Solutions</p>
+      <About></About>
     </section>
   );
 }

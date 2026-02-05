@@ -1,0 +1,22 @@
+[
+    {
+        "icon": "code",
+        "title": "Frontend development",
+        "text": "PHP, Next.js, Javascript, Tailwind CSS, jinja2 and more"
+    },
+    {
+        "icon": "db",
+        "title": "Backend development",
+        "text": "MySQL, python, ArangoDB, MongoDB, VPS, flask"
+    },
+    {
+        "icon": "ux",
+        "title": "UI/UX design",
+        "text": "Figma, photoshop, Responsive Design"
+    },
+    {
+        "icon": "gear",
+        "title": "Performance",
+        "text": "Optimization, Testing, Git"
+    }        
+]

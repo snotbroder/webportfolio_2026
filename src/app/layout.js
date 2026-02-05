@@ -2,7 +2,7 @@ import "../css/globals.css";
 import { Poppins, Inter } from 'next/font/google'
 
 const poppins = Poppins({
-  weight: '700',
+  weight: '600',
   subsets: ['latin'],
   variable: '--font-poppins',
 })
@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${poppins.variable} ${inter.variable}`}>
 
       <body>
-        <main className="max-w-6xl h-248 mx-auto mt-32 border-amber-300 border-x-2">
+        <main className="max-w-6xl my-20 mx-auto mt-32 px-6 md:px-12 lg:px-16">
         {children}
         </main>
       </body>
