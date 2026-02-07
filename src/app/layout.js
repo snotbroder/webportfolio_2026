@@ -1,5 +1,6 @@
 import "../css/globals.css";
 import { Poppins, Inter } from 'next/font/google'
+import Navigation from "./components/Navigation";
 
 const poppins = Poppins({
   weight: '600',
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${poppins.variable} ${inter.variable}`}>
 
       <body>
+          <Navigation/>
         <main className="max-w-6xl my-20 mx-auto mt-32 px-6 md:px-12 lg:px-16">
         {children}
         </main>
