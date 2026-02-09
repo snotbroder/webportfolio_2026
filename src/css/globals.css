@@ -1,48 +1,40 @@
 @import "tailwindcss";
 
-
 :root {
-/* Colours */
-  --foreground: #EDEDED;
+  /* Colours */
+  --foreground: #ededed;
   --backdrop: #000000;
   --backdrop75: #0f0f0fc1;
   --backdrop50: #0f0f0f80;
 
-  --c-primary: #00FF88;
+  --c-primary: #00ff88;
   --c-primary20: #01ff8833;
   --c-primary10: #00ff881a;
 
-  --c-secondary: #EDEDED;
+  --c-secondary: #ededed;
   --c-secondary10: #ededed1a;
   --c-secondary5: #ededed0d;
 
-  --c-tertiary: #A3A3A3;
+  --c-tertiary: #a3a3a3;
 
-  --c-accent-ylw: #FFE500;
+  --c-accent-ylw: #ffe500;
   --c-accent20-ylw: #ffe60033;
   --c-accent10-ylw: #ffe6001a;
 
-  --c-accent-blk: #1E1E1E;
+  --c-accent-blk: #1e1e1e;
 
-/* Fonts */
+  /* Fonts */
   --f-header: var(--font-poppins);
   --f-body: var(--font-inter);
 
-/* Font sizes */
-  --header-1-pref: calc(24.27px + 7.73vw);
-  --header-2-pref: calc(12.27px + 5.73vw);
-  --header-4-pref: clamp(14px, calc(0.8rem + 0.5vw), 18px);;
-  --body-highlight-pref: calc(12.45px + 1.85vw);
-  --body-pref: calc(11.45px + 1vw);
-  --body-small-pref: calc(9px + 1vw);
-
-  --step--2: clamp(0.75rem, 0.7rem + 0.2vw, 0.875rem); /* 12 → 14 */
-  --step--1: clamp(0.875rem, 0.8rem + 0.3vw, 1rem);    /* 14 → 16 */
-  --step-0: clamp(1rem, 0.95rem + 0.4vw, 1.125rem);/* 16 → 18 */
-  --step-1: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);   /* 20 → 24 */
-  --step-2: clamp(1.5rem,  1.3rem + 0.8vw, 1.875rem); /* 24 → 30 */
+  /* Font sizes */
+  --step--2: clamp(0.75rem, 0.7rem + 0.2vw, 0.7rem); /* 12 → 14 */
+  --step--1: clamp(0.875rem, 0.8rem + 0.3vw, 1rem); /* 14 → 16 */
+  --step-0: clamp(1rem, 0.95rem + 0.4vw, 1.125rem); /* 16 → 18 */
+  --step-1: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem); /* 20 → 24 */
+  --step-2: clamp(1.5rem, 1.3rem + 0.8vw, 1.875rem); /* 24 → 30 */
   --step-3: clamp(2rem, calc(1.4rem + 2.5vw), 4.5rem); /* 32 → 72 */
-
+  --step-hero: calc(24.27px + 7.73vw);
 }
 
 @theme inline {
@@ -62,15 +54,15 @@ body {
   color: var(--c-secondary);
   font-family: Arial, Helvetica, sans-serif;
 
-  h1{
+  h1 {
     font-family: var(--f-header);
     color: var(--c-secondary);
     font-style: normal;
-    font-size: var(--header-1-pref);
-    letter-spacing: -.125rem;
-    line-height: var(--header-1-pref);
+    font-size: var(--step-hero);
+    letter-spacing: -0.125rem;
+    line-height: var(--step-hero);
   }
-  h2{
+  h2 {
     font-family: var(--f-header);
     color: var(--c-secondary);
     font-style: normal;
@@ -78,49 +70,61 @@ body {
     line-height: var(--step-3);
     margin: 3rem 0rem;
 
-    &::after{
-      content: '';
+    &::after {
+      content: "";
       display: block;
       position: relative;
-      bottom: -.5rem;
+      bottom: -0.5rem;
       left: 0;
       width: 2rem;
       height: 2px;
       background-color: var(--c-primary);
     }
   }
-  h4{
+  h3 {
+    font-family: var(--f-body);
+    color: var(--c-secondary);
+    font-style: normal;
+    font-size: var(--step-1);
+    line-height: var(--step-1);
+    font-weight: 500;
+    margin: 0.5rem 0rem;
+  }
+
+  h4 {
     font-family: var(--f-body);
     color: var(--c-secondary);
     font-style: normal;
     font-size: var(--step-0);
     line-height: var(--step-0);
-    margin: .5rem 0rem;
+    margin: 0.5rem 0rem;
   }
-  p{
+
+  p {
     font-family: var(--f-body);
     font-size: var(--step-0);
+    line-height: var(--step-2);
     font-weight: 300;
     color: var(--c-tertiary);
-    .highlight{
+    .highlight {
       font-size: var(--step-1);
       color: var(--c-primary);
       font-weight: 500;
     }
-    &.small{
+    &.small {
       font-size: var(--step--2);
       font-weight: 300;
+      line-height: calc(var(--step-2) * 0.75);
     }
   }
-  
 }
 
-ul li a{
+ul li a {
   font-family: var(--f-body);
   font-size: var(--step-0);
 }
 
-.butto-label{
+.butto-label {
   font-family: var(--f-header);
   font-size: var(--step--2);
   font-weight: 300;
@@ -128,16 +132,16 @@ ul li a{
   padding: 100%;
 }
 
-a:focus{
+a:focus {
   border: none;
   outline-color: var(--c-primary);
 }
 
-.cta-primary{
+.cta-primary {
   font-family: var(--f-header);
   font-weight: 500;
 }
 
-.menu-item a{
+.menu-item a {
   font-family: var(--f-body);
 }
