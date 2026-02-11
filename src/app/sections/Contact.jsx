@@ -1,7 +1,7 @@
 "use client";
 import { MdOutlineEmail } from "react-icons/md";
-import { MdPhone } from "react-icons/md";
-import { MdLocationOn } from "react-icons/md";
+import { FiPhone } from "react-icons/fi";
+import { IoLocationOutline } from "react-icons/io5";
 
 export default function Contact() {
   return (
@@ -27,7 +27,7 @@ export default function Contact() {
           </li>
           <li className="bg-(--c-secondary5) border border-(--c-secondary10) rounded-md p-4 flex gap-6 place-items-center">
             <div className="h-12 w-12 bg-(--c-primary10) flex place-content-center items-center rounded-lg text-(--c-primary) text-2xl">
-              <MdPhone />
+              <FiPhone />
             </div>
             <div className="flex flex-col">
               <p className="small">Phone number</p>
@@ -36,7 +36,7 @@ export default function Contact() {
           </li>
           <li className="bg-(--c-secondary5) border border-(--c-secondary10) rounded-md p-4 flex gap-6 place-items-center">
             <div className="h-12 w-12 bg-(--c-primary10) flex place-content-center items-center rounded-lg text-(--c-primary) text-2xl">
-              <MdLocationOn />
+              <IoLocationOutline />
             </div>
             <div className="flex flex-col">
               <p className="small">Location</p>
