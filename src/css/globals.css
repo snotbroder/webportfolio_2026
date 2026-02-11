@@ -116,6 +116,10 @@ body {
       font-weight: 300;
       line-height: calc(var(--step-2) * 0.75);
     }
+    &.medium {
+      font-weight: 500;
+      color: var(--c-secondary);
+    }
   }
 }
 
