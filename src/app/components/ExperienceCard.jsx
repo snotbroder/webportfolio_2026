@@ -2,6 +2,7 @@
 import { MdOutlineSchool } from "react-icons/md";
 import { MdOutlineWorkOutline } from "react-icons/md";
 import { FaRegStar } from "react-icons/fa";
+import { CiCalendar } from "react-icons/ci";
 
 import { motion } from "motion/react";
 
@@ -23,7 +24,15 @@ export default function ExperienceCard({ index, title, type, place, comment, key
   return (
     <motion.article initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.05 }} className="flex flex-col gap-2 bg-(--c-secondary5) border border-(--c-secondary10) rounded-md p-6 experience-card">
       <div>
-        <h3>{title}</h3>
+        <div className="flex flex-col md:flex-row md:justify-between md:place-items-center">
+          <h3>{title}</h3>
+          <div className="flex place-items-center gap-1 py-0.5">
+            <CiCalendar className="text-md md:text-xl text-(--c-tertiary)" />
+            <p className="small">
+              {from} - <span className={to == "present" ? "text-(--c-accent-ylw)" : ""}>{to}</span>
+            </p>
+          </div>
+        </div>
         <div className="flex gap-4 place-items-center text-(--c-primary)">
           {IconComponent}
           <h4 className="text-(--c-primary)!">{place}</h4>
