@@ -176,3 +176,31 @@ a.small {
     transform: translateY(0px) rotate(5deg);
   }
 }
+
+button {
+  padding: 0.5rem 2.5rem;
+  background: var(--c-primary);
+  border-radius: 50px;
+  color: var(--c-accent-blk);
+  font-family: var(--f-body);
+  font-size: var(--step-0);
+  font-weight: 400;
+  cursor: pointer;
+
+  &.btn-active {
+    background: transparent;
+    border: var(--c-primary) 1px solid;
+    border-radius: 50px;
+    color: var(--c-secondary);
+  }
+}
+
+/* .experience-card::before {
+  content: "";
+  position: relative;
+  top: 0;
+  left: -70px;
+  background-color: red;
+  width: 10px;
+  height: 10px;
+} */

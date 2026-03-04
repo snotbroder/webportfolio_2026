@@ -1,5 +1,6 @@
 import About from "./sections/About.jsx";
 import Contact from "./sections/Contact.jsx";
+import Experience from "./sections/Experience.jsx";
 import Projects from "./sections/Projects.jsx";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <p>Building Web Solutions</p>
       <About />
       <Projects />
+      <Experience />
       <Contact />
     </section>
   );
