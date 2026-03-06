@@ -20,7 +20,7 @@ export default function Experience() {
         <h2>
           Education & <span className="text-(--c-primary)">work experience</span>
         </h2>
-        <div className="flex gap-4">
+        <div className="flex gap-4 flex-wrap">
           <button onClick={() => setToggle(false)} className={!toggle ? "btn-active" : "btn"}>
             Education
           </button>
