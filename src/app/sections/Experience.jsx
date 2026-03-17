@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 import ExperienceCard from "../components/ExperienceCard";
+import { motion } from "motion/react";
+
 export default function Experience() {
   const [toggle, setToggle] = useState(false);
 
@@ -16,17 +18,17 @@ export default function Experience() {
 
   return (
     <>
-      <section>
+      <section id="experience">
         <h2>
           Education & <span className="text-(--c-primary)">work experience</span>
         </h2>
         <div className="flex gap-4 flex-wrap">
-          <button onClick={() => setToggle(false)} className={!toggle ? "btn-active" : "btn"}>
+          <motion.button onClick={() => setToggle(false)} className={!toggle ? "btn-active" : "btn"} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             Education
-          </button>
-          <button onClick={() => setToggle(true)} className={toggle ? "btn-active" : "btn"}>
+          </motion.button>
+          <motion.button onClick={() => setToggle(true)} className={toggle ? "btn-active" : "btn"} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             Work Experience
-          </button>
+          </motion.button>
         </div>
 
         <section className="grid grid-cols-[1fr_12fr] gap-2 my-6">

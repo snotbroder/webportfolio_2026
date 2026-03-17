@@ -23,6 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${poppins.variable} ${inter.variable}`}>
       <body>
+        <div id="top"></div>
         <Navigation />
         <main className="max-w-6xl my-20 mx-auto mt-32 px-6 md:px-12 lg:px-16">{children}</main>
         <Footer />

@@ -6,12 +6,12 @@ import Contact from "./sections/Contact.jsx";
 
 export default function Home() {
   return (
-    <section>
+    <>
       <Hero />
       <About />
       <Projects />
       <Experience />
       <Contact />
-    </section>
+    </>
   );
 }

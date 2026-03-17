@@ -13,7 +13,7 @@ export default function ProjectCard({ index, title, href, copy, img, year, stack
         <Image className="object-cover " fill src={img} alt="Project thumbnail"></Image>
       </div>
 
-      <section className="flex flex-col gap-4 p-6">
+      <div className="flex flex-col gap-4 p-6">
         <div className="flex gap-3 place-items-center">
           <h3>{title}</h3>
           <div className="capitalize w-fit h-fit px-2 bg-(--c-accent10-ylw) border border-(--c-accent20-ylw) rounded-xl" key={index}>
@@ -21,14 +21,14 @@ export default function ProjectCard({ index, title, href, copy, img, year, stack
           </div>
         </div>
         <p className="">{copy}</p>
-        <section className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2">
           {stack.map((singleStack, index) => (
             <div className="capitalize px-2 md:-py-2 bg-(--c-primary10) border border-(--c-primary20) rounded-3xl" key={index}>
               <p className="small text-(--c-primary)!">{singleStack}</p>
             </div>
           ))}
-        </section>
-      </section>
+        </div>
+      </div>
       <div className="px-6 py-4 flex gap-6">
         <Link target="_blank" href={`https://${github}`} className="flex gap-1 place-items-center hover:text-(--c-secondary) ease-in transition-all text-(--c-tertiary)">
           <IoLogoGithub />

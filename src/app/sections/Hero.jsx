@@ -7,7 +7,7 @@ import { IoLocationOutline } from "react-icons/io5";
 export default function Hero() {
   return (
     <>
-      <section className="grid grid-cols-1 gap-6 place-items-center md:place-items-stretch md:grid-cols-2">
+      <section className="grid grid-cols-1 gap-6 place-items-center md:place-items-stretch md:grid-cols-2 overflow-hidden lg:overflow-visible">
         <section className="flex flex-col place-content-center gap-8 lg:gap-16">
           <div className="flex-col">
             <h1 className="flex gap-2 items-end md:items-start flex-wrap md:flex-col md:gap-2">
