@@ -34,7 +34,7 @@
   --step-1: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem); /* 20 → 24 */
   --step-2: clamp(1.5rem, 1.3rem + 0.8vw, 1.875rem); /* 24 → 30 */
   --step-3: clamp(2rem, calc(1.4rem + 2.5vw), 4.5rem); /* 32 → 72 */
-  --step-hero: clamp(5rem, calc(3.7rem + 5.5vw), 8rem); /* 48 → 128 */
+  --step-hero: clamp(6rem, calc(5.7rem + 5.5vw), 14rem); /* 48 → 128 */
   /* --step-hero: calc(24.27px + 7.73vw); */
 }
 
@@ -61,7 +61,7 @@ body {
     font-size: var(--step-hero);
     letter-spacing: -0.125rem;
     line-height: 5.2rem;
-    &.sub-hero {
+    .sub-hero {
       font-size: var(--step-3);
       color: var(--c-secondary);
     }
@@ -209,3 +209,10 @@ button {
   width: 10px;
   height: 10px;
 } */
+
+.bg-hue {
+  background: radial-gradient(circle, #00ff8845 0%, rgba(0, 0, 0, 0) 61%);
+}
+.bg-hue-accent {
+  background: radial-gradient(circle, var(--c-accent20-ylw) 0%, rgba(0, 0, 0, 0) 61%);
+}
