@@ -7,15 +7,15 @@ import { IoLocationOutline } from "react-icons/io5";
 export default function Hero() {
   return (
     <>
-      <section className="grid grid-cols-1 gap-6 place-items-center md:place-items-stretch md:grid-cols-2 overflow-hidden lg:overflow-visible">
-        <section className="flex flex-col place-content-center gap-8 lg:gap-16">
+      <section className="grid grid-cols-1 gap-12 place-items-center md:place-items-stretch md:grid-cols-2 overflow-hidden lg:overflow-visible">
+        <section className="flex flex-col place-content-center gap-8 md:gap-16 lg:gap-24">
           <div className="flex-col">
-            <h1 className="flex gap-2 items-end md:items-start flex-wrap md:flex-col md:gap-2">
+            <h1 className="flex gap-2 items-end md:items-start flex-wrap md:flex-col md:gap-2 lg:gap-10">
               <span className="sub-hero mb-4 md:mb-0">Hi I&apos;m</span>
               <span>Joris</span>
             </h1>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 lg:gap-5">
             <div className="flex flex-wrap gap-6 place-items-center xl:flex-col xl:place-items-start">
               <p className="text-(--c-accent-ylw)! font-medium! small bg-(--c-accent10-ylw) w-fit h-fit py-1 px-3 text-center rounded-3xl  border border-(--c-accent20-ylw)">FULL-STACK DEVELOPMENT STUDENT</p>
             </div>

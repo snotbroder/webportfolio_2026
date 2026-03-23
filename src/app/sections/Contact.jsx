@@ -31,7 +31,7 @@ export default function Contact() {
               </div>
               <div className="flex flex-col">
                 <p className="small">Phone number</p>
-                <p className="medium">+45 30545925</p>
+                <p className="medium">+45 30 54 59 25</p>
               </div>
             </li>
             <li className="bg-(--c-secondary5) border border-(--c-secondary10) rounded-md p-4 flex gap-6 place-items-center">
