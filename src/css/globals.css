@@ -208,7 +208,38 @@ button {
 
 .bg-hue {
   background: radial-gradient(circle, #00ff8845 0%, rgba(0, 0, 0, 0) 61%);
+  opacity: 1;
+  animation: pulse 15s ease-in-out normal infinite;
 }
 .bg-hue-accent {
   background: radial-gradient(circle, var(--c-accent20-ylw) 0%, rgba(0, 0, 0, 0) 61%);
+  opacity: 1;
+  animation: pulse 10s ease-in-out reverse infinite;
+  animation-delay: 4s;
+}
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fade_in 0.75s forwards;
+  animation-delay: 0.5s;
+}
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

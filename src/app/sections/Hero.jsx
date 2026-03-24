@@ -7,7 +7,7 @@ import { IoLocationOutline } from "react-icons/io5";
 export default function Hero() {
   return (
     <>
-      <section className="grid grid-cols-1 gap-12 place-items-center md:place-items-stretch md:grid-cols-2 overflow-hidden lg:overflow-visible">
+      <section className="grid grid-cols-1 gap-12 place-items-center md:place-items-stretch md:grid-cols-2 overflow-hidden lg:overflow-visible fade-in opacity-0">
         <section className="flex flex-col place-content-center gap-8 md:gap-16 lg:gap-24">
           <div className="flex-col">
             <h1 className="flex gap-2 items-end md:items-start flex-wrap md:flex-col md:gap-2 lg:gap-10">
@@ -35,8 +35,8 @@ export default function Hero() {
           </div>
           <div className="bg-hue-accent absolute -top-30 -right-20 w-100 h-100 z-0 overflow-hidden"></div>
           <div className="bg-hue absolute top-20 left--30 w-130 h-130 z-0 overflow-hidden"></div>
-          <Image className="border-b-(--c-secondary10) border z-10 relative" width={620} height={620} src="/me.png" alt="Greyscaled portrait image of man smiling directly into the camera."></Image>
-          <ul className="absolute bottom-2 right-2 flex gap-4">
+          <Image className="border-b-(--c-secondary10) border z-10 relative " width={620} height={620} src="/me.png" alt="Greyscaled portrait image of man smiling directly into the camera."></Image>
+          <ul className="absolute bottom-2 right-2 flex gap-4 z-100">
             <li>
               <a aria-label="Github page button" className="w-12 h-12 bg-(--c-secondary5) border border-(--c-secondary10) rounded-lg hover:bg-(--c-secondary10) hover:text-(--c-primary) flex place-content-center" target="_blank" href="https://github.com/snotbroder">
                 <IoLogoGithub className="text-2xl my-auto hover:text-(--c-primary)" />
