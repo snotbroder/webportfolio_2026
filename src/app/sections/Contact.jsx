@@ -20,8 +20,8 @@ export default function Contact() {
               </div>
               <div className="flex flex-col">
                 <p className="small">E-mail</p>
-                <a className="font-medium" href="mailto:contact@voorde.dk">
-                  contact@voorde.dk
+                <a className="font-medium" href="mailto:tenvoordejoris@gmail.com">
+                  tenvoordejoris@gmail.com
                 </a>
               </div>
             </li>
